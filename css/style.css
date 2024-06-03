@@ -52,6 +52,8 @@ main {
     padding-bottom: 4rem;
 }
 
+/* Home */
+
 .nosotros p {
     text-align: justify;
     font-size: 20px;
@@ -67,10 +69,11 @@ main {
     border-radius: 4px;
 }
 
-.nosotros h1 {
+h1 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -197,4 +200,72 @@ footer ul {
 
 footer a:hover {
     color: #35e5f3;
+}
+
+/* Pagina Bandas */
+
+.seccion-bandas {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+flex-wrap: wrap;
+gap: 2rem;
+margin-bottom: 4rem;
+}
+
+.tarjeta-banda {
+    width: 40vw;
+    text-align: center;
+}
+
+.tarjeta-banda h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tarjeta-banda img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px #e2d0df;
+}
+
+@media only screen and (min-width: 768px) {
+    .tarjeta-banda {
+        width: 29vw;
+    }
+
+    .seccion-bandas{
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+
+    .playlist-bandas {
+    padding: 0 1rem;
+    height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .cont-bandas-xl {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .seccion-bandas {
+        grid-column: 1 / 2;
+        margin-bottom: 0;
+    }
+
+    .tarjeta-banda {
+        width: 18vw;
+    }
+
+    .playlist-bandas {
+        padding: 3rem 1rem 1rem 0;
+        min-height: 1120px;
+    }
+
 }
