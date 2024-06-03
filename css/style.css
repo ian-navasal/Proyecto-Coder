@@ -26,7 +26,10 @@ p {
 
 header {
     background-color: #063049;
-    border-bottom: 2px solid black;
+}
+
+.navbar-toggler {
+    background-color: #35e6f362;
 }
 
 .nav-link {
@@ -45,7 +48,8 @@ header img {
 /* main */
 
 main {
-    background-image: url("../Imagenes/bg-main.jpg");
+    background-image: linear-gradient(rgb(218, 218, 240), rgba(230, 230, 250, 0.3)) ;
+    padding-bottom: 4rem;
 }
 
 .nosotros p {
@@ -54,37 +58,111 @@ main {
 }
 
 .nosotros div {
-    width: 40vw;
-    min-width: 400px;
+    padding: 2rem 1rem 0 1rem;
 }
 
 .nosotros img {
-    max-width: 40vw;
-    min-width: 400px;
+    width: 100vw;
+    margin: 2rem 0;
+    border-radius: 4px;
 }
 
 .nosotros h1 {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-.nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-    justify-content: space-around;
-    margin-bottom: 2rem;
+@media only screen and (min-width: 768px) {
+    .nosotros {
+        padding: 2rem;
+    }
+
+    .nosotros div {
+        padding: 0;
+    }
 }
+
+@media only screen and (min-width: 992px) {
+    .nosotros {
+        display: flex;
+        padding: 2rem;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    .nosotros div {
+        max-width: 40vw;
+        padding: 0;
+    }
+
+    .nosotros img {
+        width: 40vw;
+        margin: 0;
+        height: fit-content;
+    }
+}
+
+/* tarjetas */
 
 .tarjeta-home h2 {
-    background-color: darkblue;
-    color: whitesmoke;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.tarjeta-home img {
+    border-radius: 4px;
 }
 
 .tarjeta-home p {
     text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-home {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+    border: 1px solid #e2d0df;
+    background-color: #0630490e;
+}
+
+.cont-tarjetas-home {
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .cont-tarjetas-home {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: auto, auto;
+    }
+
+    .tarjeta-uno {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+    }
+
+    .tarjeta-home{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cont-tarjetas-home {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tarjeta-home {
+        width: 32%;
+    }
+
 }
 
 /* Footer */
