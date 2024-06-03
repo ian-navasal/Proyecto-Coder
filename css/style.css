@@ -34,11 +34,12 @@ header {
 
 .nav-link {
     color: white;
-    font-weight: 400;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-link:hover {
     color: rgb(216, 112, 181);
+    border-bottom: 2px solid rgb(216, 112, 181);
 }
 
 header img {
@@ -89,7 +90,7 @@ h1 {
 @media only screen and (min-width: 992px) {
     .nosotros {
         display: flex;
-        padding: 2rem;
+        padding: 4rem 2rem;
         justify-content: space-around;
         margin-bottom: 2rem;
         align-items: center;
