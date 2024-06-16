@@ -1,0 +1,24 @@
+.cont-carousel-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 2rem;
+
+    .carousel-galeria {
+        border: 2px solid black;
+        border-radius: 8px;
+        height: fit-content;
+        padding: 1rem;
+        box-shadow: 2px 2px 12px gray;
+
+        .carousel-inner {
+            img {
+                height: 500px;
+                object-fit: contain;
+            }
+        }
+    }
+}

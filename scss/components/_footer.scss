@@ -1,0 +1,31 @@
+footer {
+    background-color: slategray;
+
+    a {
+        font-size: 36px;
+        color: white;
+
+        &:hover {
+            color: $celeste-principal;
+        }
+    }
+
+    img {
+        height: 64px;
+        width: 128px;
+        margin: 1rem;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin: 0;
+    }
+}

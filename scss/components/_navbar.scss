@@ -1,0 +1,23 @@
+header {
+    background-color: $azul-principal;
+
+    img {
+        height: 48px;
+    }
+}
+
+.navbar-toggler {
+    background-color: #35e6f34b;
+}
+
+.nav-link {
+    color: white;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        color: $rosa-principal;
+        @include mq-lg {
+            border-bottom: 2px solid $rosa-principal;
+        }
+    }
+}

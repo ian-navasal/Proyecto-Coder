@@ -1,0 +1,100 @@
+.nosotros {
+    p {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    div {
+        padding: 2rem 1rem 0 1rem;
+
+        @include mq-md {
+            padding: 0;
+        }
+
+        @include mq-lg {
+            max-width: 40vw;
+            padding: 0;
+        }
+    }
+
+    img {
+        width: 100vw;
+        margin: 2rem 0;
+        border-radius: 4px;
+
+        @include mq-lg {
+            width: 40vw;
+            margin: 0;
+            height: fit-content;
+        }
+    }
+
+    @include mq-md {
+        padding: 2rem;
+    }
+
+    @include mq-lg {
+        display: flex;
+        padding: 4rem 2rem;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+}
+
+
+.tarjeta-uno {
+    @include mq-md {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+    }
+}
+
+.tarjeta-home {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+    border: 1px solid $rosa-sombra;
+    background-color: #0630490e;
+
+    p {
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        border-radius: 4px;
+    }
+
+    h2 {
+        text-align: center;
+        border-radius: 8px;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    @include mq-md {
+        margin: 0;
+    }
+
+    @include mq-lg {
+        width: 32%;
+    }
+}
+
+.cont-tarjetas-home {
+    padding: 0 1rem;
+    gap: 2rem;
+
+    @include mq-md {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: auto, auto;
+    }
+
+    @include mq-lg {
+        display: flex;
+        justify-content: space-around;
+    }
+}
