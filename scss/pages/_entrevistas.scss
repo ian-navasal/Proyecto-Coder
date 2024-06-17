@@ -1,14 +1,30 @@
 .cont-entrevistas {
+
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 3rem 1rem 1rem 1rem;
+    justify-content: center;
+
+    @include mq-lg {
+        justify-content: space-around;
+        margin: 3rem 1rem 1rem 1rem;
+    }
 
     .tarj-entrevista {
         border: 4px solid $rosa-sombra;
         border-radius: 8px;
         padding: 1rem;
         box-shadow: 2px 4px 8px $rosa-sombra;
+        width: 90%;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mq-md {
+            width: auto;
+        }
 
         h2 {
             text-align: center;
@@ -20,6 +36,13 @@
 
         iframe {
             border-radius: 4px;
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16/9;
+
+            @include mq-md {
+                width: 560px;
+            }
         }
     }
 }
