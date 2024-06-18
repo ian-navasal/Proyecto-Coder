@@ -1,11 +1,14 @@
 .cont-carousel-galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    align-content: center;
     margin: 1rem;
     padding: 1rem;
-    gap: 2rem;
+
+    @include mq-md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-content: center;
+        gap: 4rem 2rem;
+    }
 
     .carousel-galeria {
         border: 2px solid black;
@@ -13,11 +16,25 @@
         height: fit-content;
         padding: 1rem;
         box-shadow: 2px 2px 12px gray;
+        margin-bottom: 2rem;
+        &:last-child {margin-bottom: 0;}
+
+        @include mq-md {
+            margin: 0;
+        }
 
         .carousel-inner {
             img {
-                height: 500px;
                 object-fit: contain;
+                max-height: 400px;
+
+                @include mq-md {
+                    height: 410px;
+                }
+
+                @include mq-lg {
+                    height: 500px;
+                }
             }
         }
     }

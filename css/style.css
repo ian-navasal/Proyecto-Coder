@@ -308,13 +308,17 @@ footer ul {
 }
 
 .cont-carousel-galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  align-content: center;
   margin: 1rem;
   padding: 1rem;
-  gap: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .cont-carousel-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-content: center;
+    gap: 4rem 2rem;
+  }
 }
 .cont-carousel-galeria .carousel-galeria {
   border: 2px solid black;
@@ -322,10 +326,29 @@ footer ul {
   height: fit-content;
   padding: 1rem;
   box-shadow: 2px 2px 12px gray;
+  margin-bottom: 2rem;
+}
+.cont-carousel-galeria .carousel-galeria:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .cont-carousel-galeria .carousel-galeria {
+    margin: 0;
+  }
 }
 .cont-carousel-galeria .carousel-galeria .carousel-inner img {
-  height: 500px;
   object-fit: contain;
+  max-height: 400px;
+}
+@media only screen and (min-width: 768px) {
+  .cont-carousel-galeria .carousel-galeria .carousel-inner img {
+    height: 410px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cont-carousel-galeria .carousel-galeria .carousel-inner img {
+    height: 500px;
+  }
 }
 
 .cont-contacto {
