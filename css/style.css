@@ -354,10 +354,26 @@ footer ul {
 .cont-contacto {
   padding: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .cont-contacto {
+    justify-content: space-evenly;
+  }
 }
 .cont-contacto .form-contacto {
-  width: 30vw;
+  width: 90vw;
+}
+@media only screen and (min-width: 768px) {
+  .cont-contacto .form-contacto {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cont-contacto .form-contacto {
+    width: 30vw;
+  }
 }
 .cont-contacto .form-contacto .elemento-form {
   margin: 1rem;
@@ -393,22 +409,34 @@ footer ul {
 }
 
 .contacto-redes {
-  width: 30vw;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .contacto-redes {
+    width: 30vw;
+    margin-top: 1rem;
+    align-items: flex-start;
+  }
 }
 .contacto-redes p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.contacto-redes li {
+.contacto-redes ul {
+  padding: 0;
+}
+.contacto-redes ul li {
   list-style: none;
   display: inline-block;
   font-size: xx-large;
   padding-right: 2rem;
 }
-.contacto-redes a {
+.contacto-redes ul li a {
   color: #063049;
 }
-.contacto-redes a:hover {
+.contacto-redes ul li a:hover {
   color: rgba(16, 111, 199, 0.6980392157);
 }
 
