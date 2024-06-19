@@ -26,14 +26,14 @@
         .carousel-inner {
             img {
                 object-fit: contain;
-                max-height: 400px;
+                height: 400px;
 
                 @include mq-md {
-                    height: 410px;
+                    height: 440px;
                 }
 
                 @include mq-lg {
-                    height: 500px;
+                    height: 520px;
                 }
             }
         }

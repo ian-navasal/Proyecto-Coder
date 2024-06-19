@@ -3,6 +3,11 @@ header {
 
     img {
         height: 48px;
+
+        &:hover {
+            transition: 0.5s ease;
+            scale: 1.1;
+        }
     }
 }
 
@@ -15,7 +20,9 @@ header {
     border-bottom: 2px solid transparent;
 
     &:hover {
+        transition: 0.5s ease;
         color: $rosa-principal;
+
         @include mq-lg {
             border-bottom: 2px solid $rosa-principal;
         }
